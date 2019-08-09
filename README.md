@@ -6,6 +6,10 @@ http://online-live1.services.u-blox.com/GetOnlineData.ashx?token=TOKEN;gnss=gps;
 
 Replace TOKEN, LATITUDE and LONGITUDE with your ublox-TOKEN, current latitude and longitude ( in signed degrees format) respectively. 
 
-and paste this link into code:
-    http.begin("http://online-live1.services.u-blox.com/GetOnlineData.ashx?token=TOKEN;gnss=gps;datatype=eph,alm,aux,pos;filteronpos;format=aid;lat=LATITUDE;lon=LONGITUDE;pacc=5000");
+and paste this link into the code:
+
+http.begin("http://online-live1.services.u-blox.com/GetOnlineData.ashx?token=TOKEN;gnss=gps;datatype=eph,alm,aux,pos;filteronpos;format=aid;lat=LATITUDE;lon=LONGITUDE;pacc=5000");
+
+
+Set your Baud rate of Serial monitor to 9600 to view the result, and wait maximum of 1 minute to get latitude and longitude.
 
